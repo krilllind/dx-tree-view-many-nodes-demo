@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public datasource: { id: number, parentId: number; expanded: boolean; text: string; hasItems: boolean }[];
-  public size = 1000;
-  public depth = 3;
+  public size = 5000;
+  public depth = 5;
   public expanded = false;
   public log = false;
 
