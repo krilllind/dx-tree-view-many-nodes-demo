@@ -1,0 +1,40 @@
+
+:host {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: stretch;
+  
+    .block-1,
+    .block-2 {
+      padding: 10px;
+    }
+  
+    .block-1 {
+      width: 200px;
+      flex-shrink: 0;
+      border-right: 1px solid #CCC;
+  
+      label {
+        display: inline-block;
+        width: 100px;
+      }
+    }
+  
+    .block-2 {
+      flex-grow: 1;
+      max-height: 100%;
+      overflow: auto;
+
+      .node {
+        display: flex;
+        align-items: center;
+        
+        .text {
+          display: inline-block;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  
